@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heat Map</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+    <h3 id="description">1753 - 2015: base temperature 8.66℃</h3>
+    <svg id="svgContainer"></svg>
+    <svg id="legend">
+      <g>
+        <rect class="legend-rect" fill="SteelBlue" x="0" y="0" />
+        <text x="15" y="55">1</text>
+      </g>
+      <g>
+        <rect class="legend-rect" fill="PowderBlue" x="40" y="0" />
+        <text x="55" y="55">2</text>
+      </g>
+      <g>
+        <rect class="legend-rect" fill="Orange" x="80" y="0" />
+        <text x="95" y="55">3</text>
+      </g>
+      <g>
+        <rect class="legend-rect" fill="Tomato" x="120" y="0" />
+        <text x="135" y="55">4</text>
+      </g>
+      <text x="0" y="80">1. "variance < or = -1"</text>
+      <text x="0" y="100">2. "variance < or = 0"</text>
+      <text x="0" y="120">3. "variance < or = 1"</text>
+      <text x="0" y="140">4. "variance more then 1"</text>
+    </svg>
+    <script src="./script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
